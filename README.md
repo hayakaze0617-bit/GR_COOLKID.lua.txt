@@ -1,0 +1,1 @@
+# GR_COOLKID.lua.txt
