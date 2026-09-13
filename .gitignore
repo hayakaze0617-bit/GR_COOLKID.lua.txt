@@ -1,5 +1,5 @@
 -- ============================================================
--- GR_COOLKID hub Private v1.5 - Rayfield版（FOV円表示なし + KeySystem）
+-- GR_COOLKID hub Private v1.5 - Rayfield版（FOV円表示なし + KeySystem削除）
 -- ============================================================
 
 -- チャット送信機能（起動メッセージ用）
@@ -22,7 +22,7 @@ local function send(m)
 end
 
 -- ============================================================
--- Rayfield ロード（script_key付き）
+-- Rayfield ロード
 -- ============================================================
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
@@ -34,7 +34,7 @@ end
 print("✅ Rayfield読み込み成功")
 
 -- ============================================================
--- ハブ設定（KeySystem有効）
+-- ハブ設定（KeySystem削除）
 -- ============================================================
 local Window = Rayfield:CreateWindow({
     Name = "GR_COOLKID hub Private v1.5",
@@ -50,16 +50,7 @@ local Window = Rayfield:CreateWindow({
         Invite = "",
         RememberJoins = true
     },
-    KeySystem = true, -- KeySystemを有効化
-    KeySettings = {
-        Title = "GR_COOLKID hub | Key System",
-        Subtitle = "キーを入力してください",
-        Note = "キー: ZWExOarKtFvomRQjoTqtyyEkzopHEwtb",
-        FileName = "GRCOOLKID_Key",
-        SaveKey = true,
-        GrabKeyFromSite = false,
-        Key = {"ZWExOarKtFvomRQjoTqtyyEkzopHEwtb"}
-    }
+    KeySystem = false
 })
 
 task.wait(0.5)
@@ -106,7 +97,6 @@ MainTab:CreateLabel("📍 テレポート")
 MainTab:CreateLabel("🎯 Silent Aim")
 MainTab:CreateLabel("👤 プレイヤー機能")
 MainTab:CreateLabel("💥 Grabkick")
-MainTab:CreateLabel("🔑 Key: ZWExOarKtFvomRQjoTqtyyEkzopHEwtb")
 MainTab:CreateLabel("✅ 起動メッセージをチャットに送信済み")
 
 -- ============================================================
@@ -1503,6 +1493,5 @@ send("byGR_COOLKID")
 print("========================================")
 print("GR_COOLKID hub Private v1.5 - Rayfield版")
 print("家破壊 / テレポート / Silent Aim / プレイヤー / Grabkick")
-print("🔑 Key: ZWExOarKtFvomRQjoTqtyyEkzopHEwtb")
 print("全機能ロード完了")
 print("========================================")
